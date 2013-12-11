@@ -200,9 +200,9 @@ if [[ OSX ]]; then
     /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
     /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
 
-    # Use columns view in all Finder windows by default
+
     # Four-letter codes for the other view modes: `icnv`, `Nlsv`, `Flwv`
-    defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+    defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
     # General: enable the warning before emptying the Trash
     defaults write com.apple.finder WarnOnEmptyTrash -bool <%- osx.general_trash %>

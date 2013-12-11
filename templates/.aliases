@@ -1,2 +1,57 @@
 # -- Server --------------------------------------------------------------------
 alias server='open http://localhost:8000 && http-server -p 8000'
+
+# -- More
+
+alias reload!='. ~/.zshrc'
+alias c='clear'
+alias ll='ls -la'
+alias ls='ls -aF'
+alias x="exit"
+
+# Editor
+
+alias edit='sublime'
+
+# Make basic commands interactive, and verbose
+
+alias cp="cp -iv"      # interactive, verbose
+alias rm="rm -i"      # interactive
+alias mv="mv -iv"       # interactive, verbose
+alias grep="grep -i"  # ignore case
+
+# Diskspace
+
+alias diskspace='df -h'
+
+# Safety Nets
+
+
+# Parenting changing perms on / #
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+
+## cd
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
+# sublime
+alias subl="sudo subl"
+alias sublime="sudo sublime"
+
+# misc
+
+alias path='echo -e ${PATH//:/\\n}'
+alias nowdate='date +"%d-%m-%Y"'
+
+
+# Several aliases from:
+  # http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html
+  # http://www.thegeekstuff.com/2010/04/unix-bash-alias-examples/
+  # http://linux.101hacks.com/cd-command/cd-alias/
