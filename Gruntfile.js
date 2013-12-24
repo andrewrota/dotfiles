@@ -98,22 +98,22 @@ module.exports = function(grunt) {
                     questions: [
                         {
                             config: 'config.osx.computername',
-                            default: 'eduardo',
+                            default: 'andrewrota',
                             message: 'Which computer name would you like to use?'
                         },
                         {
                             config: 'config.git.name',
-                            default: 'Eduardo Lundgren',
+                            default: 'Andrew Rota',
                             message: 'Which Git name would you like to use?'
                         },
                         {
                             config: 'config.git.email',
-                            default: 'eduardo.lundgren@liferay.com',
+                            default: 'andrew@example.com',
                             message: 'Which Git email would you like to use?'
                         },
                         {
                             config: 'config.editor',
-                            default: 'subl',
+                            default: 'vim',
                             message: 'Which editor would you like to use?'
                         },
                         {
