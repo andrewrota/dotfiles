@@ -51,6 +51,6 @@
     "gh-jira": "~0.4.2",
     "grunt-cli": "~0.1.7",
     "http-server": "~0.5.5",
-    "jshint": "*",
+    "jshint": "*"
   }
 }
