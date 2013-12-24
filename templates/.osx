@@ -217,8 +217,8 @@ if [[ OSX ]]; then
     # Dock, Dashboard, and hot corners                                         #
     ############################################################################
 
-    $ Dock: disable glass effect
-    defaults write com.apple.dock no-glass -boolean YES
+    $ Dock: disable glass effect true/false
+    defaults write com.apple.dock no-glass -boolean false
 
     # Dock: enable highlight hover effect for the grid view of a stack
     defaults write com.apple.dock mouse-over-hilite-stack -bool <%- osx.dock_highlight %>
