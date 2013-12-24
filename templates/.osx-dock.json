@@ -1,6 +1,6 @@
 [
     {
-        "checked": true,
+        "checked": false,
         "name": "Automatically hide and show",
         "value": "dock_autohide"
     },
@@ -10,12 +10,12 @@
         "value": "dock_animation"
     },
     {
-        "checked": true,
+        "checked": false,
         "name": "Enable highlight hover effect for the grid view of a stack",
         "value": "dock_highlight"
     },
     {
-        "checked": true,
+        "checked": false,
         "name": "Enable magnification",
         "value": "dock_magnification"
     },
