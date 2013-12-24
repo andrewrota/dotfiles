@@ -1,5 +1,5 @@
 # Andrew's dotfiles
-#### Forked from Eduardo's Dotfiles
+#### Forked from Eduardo Lundgren's Dotfiles
 
 ## Dependencies
 
