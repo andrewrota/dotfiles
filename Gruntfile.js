@@ -369,7 +369,7 @@ module.exports = function(grunt) {
             },
             
             vim_dir: {
-                command: 'mkdir -p <%= config.vim.path_vim %>/autoload';
+                command: 'mkdir -p <%= config.vim.path_vim %>/autoload'
             },
             
             vim_pathogen: {
