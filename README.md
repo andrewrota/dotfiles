@@ -9,10 +9,10 @@
 ## How to install?
 
 ```sh
-$ [sudo] npm install -g dotfiles
+$ sudo npm install -g https://github.com/andrewrota/dotfiles/tarball/master
 ```
 
-This will install [dotfiles](http://npmjs.org/dotfiles) from [NPM](http://npmjs.org).
+This will install [dotfiles](https://github.com/andrewrota/dotfiles) from [Github](http://github.com).
 
 ## How to setup?
 
