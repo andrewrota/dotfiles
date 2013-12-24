@@ -350,6 +350,34 @@ module.exports = function(grunt) {
 
             ruby_update: {
                 command: 'sudo gem update --system'
+            },
+            
+            vim_dir: {
+                command: 'mkdir -p ~/.vim/autoload ~/.vim/bundle';
+            },
+            
+            vim_pathogen: {
+                command: 'curl -Sso ~/.vim/autoload/pathogen.vim \ https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim'
+            },
+            
+            vim_nerdtree: {
+                command: 'git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree'
+            },
+            
+            vim_nerdtree_tabs: {
+                command: 'git clone https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/vim-nerdtree-tabs'  
+            },
+            
+            vim_syntastic: {
+                command: 'git clone https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic'
+            },
+            
+            vim_jsbeautify: {
+                command: 'git clone https://github.com/maksimr/vim-jsbeautify.git ~/.vim/bundle/vim-jsbeautify && cd ~/.vim/bundle/vim-jsbeautify && git submodule update --init --recursive'
+            },
+            
+            vim_emmet: {
+                command: 'git clone http://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim'
             }
 
         }
