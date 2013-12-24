@@ -21,12 +21,6 @@
     },
     {
         "checked": true,
-        "name": "Disable glass",
-        "value": "no_glass"
-
-    }
-    {
-        "checked": true,
         "name": "Enable spring loading for all Dock items",
         "value": "dock_spring"
     },
