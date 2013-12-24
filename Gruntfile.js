@@ -74,11 +74,11 @@ module.exports = function(grunt) {
             themes: {
                 path_dracula: userhome('.dotfiles/themes/dracula')
             },
-            
+
             vim: {
                 path_vim_bundle: userhome('.vim/bundle'),
                 path_vim: userhome('.vim'),
-                path_vimrc: userhome()
+                path_vimrc: userhome('.vimrc')
             },
 
             z: {
@@ -199,7 +199,7 @@ module.exports = function(grunt) {
                     '<%= config.aliases.path_aliases %>': ['templates/.aliases']
                 }
             },
-            
+
             vim: {
                 options: {
                     data: '<%= config %>'
@@ -347,7 +347,7 @@ module.exports = function(grunt) {
             theme_iterm: {
                 command: 'open <%= config.themes.path_dracula %>/iterm/Dracula.itermcolors'
             },
-            
+
             node_latest: {
                 command: 'sudo n latest'
             },
@@ -367,33 +367,37 @@ module.exports = function(grunt) {
             ruby_update: {
                 command: 'sudo gem update --system'
             },
-            
+
             vim_dir: {
                 command: 'mkdir -p <%= config.vim.path_vim %>/autoload'
             },
-            
+
             vim_pathogen: {
                 command: 'curl -Sso <%= config.vim.path_vim %>/autoload/pathogen.vim \ https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim'
             },
-            
+
             vim_nerdtree: {
                 command: 'git clone https://github.com/scrooloose/nerdtree.git <%= config.vim.path_vim_bundle %>/nerdtree'
             },
-            
+
             vim_nerdtree_tabs: {
-                command: 'git clone https://github.com/jistr/vim-nerdtree-tabs.git <%= config.vim.path_vim_bundle %>/vim-nerdtree-tabs'  
+                command: 'git clone https://github.com/jistr/vim-nerdtree-tabs.git <%= config.vim.path_vim_bundle %>/vim-nerdtree-tabs'
             },
-            
+
             vim_syntastic: {
                 command: 'git clone https://github.com/scrooloose/syntastic.git <%= config.vim.path_vim_bundle %>/syntastic'
             },
-            
+
             vim_jsbeautify: {
                 command: 'git clone https://github.com/maksimr/vim-jsbeautify.git <%= config.vim.path_vim_bundle %>/vim-jsbeautify && cd <%= config.vim.path_vim_bundle %>/vim-jsbeautify && git submodule update --init --recursive'
             },
-            
+
             vim_emmet: {
                 command: 'git clone http://github.com/mattn/emmet-vim.git <%= config.vim.path_vim_bundle %>/emmet-vim'
+            },
+
+            z_complete: {
+                command: 'cd ~'
             }
 
         }
