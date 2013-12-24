@@ -348,14 +348,6 @@ module.exports = function(grunt) {
                 command: 'open <%= config.themes.path_dracula %>/iterm/Dracula.itermcolors'
             },
 
-            node_latest: {
-                command: 'sudo n latest'
-            },
-
-            node_stable: {
-                command: 'sudo n stable'
-            },
-
             ruby_compass: {
                 command: 'sudo gem install compass'
             },
