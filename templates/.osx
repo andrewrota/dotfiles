@@ -48,6 +48,9 @@ if [[ OSX ]]; then
 
     # General: enable smart dashes, they're annoying when typing code
     defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool <%- osx.general_dashes %>
+    
+    # General: enable text select in preview
+    defaults write com.apple.finder QLEnableTextSelection -bool true 
 
     ############################################################################
     # Trackpad, mouse, keyboard, Bluetooth accessories, and input              #
