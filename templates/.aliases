@@ -1,6 +1,9 @@
 # -- Server --------------------------------------------------------------------
 alias server='open http://localhost:8000 && http-server -p 8000'
 
+# -- Node Harmony
+alias node='node --harmony'
+
 # -- More
 
 alias reload!='. ~/.zshrc'
