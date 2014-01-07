@@ -38,5 +38,8 @@ fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# -- Java ----------------------------------------------------------------------
+export JAVA_HOME="/usr/lib/jvm/default-java"
+
 # -- Update --------------------------------------------------------------------
 dotfiles
