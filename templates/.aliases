@@ -10,11 +10,7 @@ alias reload!='. ~/.zshrc'
 alias c='clear'
 alias ll='ls -la'
 alias ls='ls -aF'
-alias x="exit"
-
-# Editor
-
-alias edit='sublime'
+alias x='exit'
 
 # Make basic commands interactive, and verbose
 
@@ -45,8 +41,8 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
 # sublime
-alias subl="sudo subl"
-alias sublime="sudo sublime"
+# alias subl="sudo subl"
+# alias sublime="sudo sublime"
 
 # misc
 
