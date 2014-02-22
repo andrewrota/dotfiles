@@ -365,7 +365,7 @@ module.exports = function(grunt) {
             },
 
             zsh: {
-                command: 'chsh -s /bin/zsh'
+                command: 'sudo chsh -s /bin/zsh'
             },
 
             theme_alfred: {
