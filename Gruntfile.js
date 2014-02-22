@@ -284,6 +284,34 @@ module.exports = function(grunt) {
                     directory: '<%= config.zsh.path_plugin_syntax %>',
                     repository: 'https://github.com/zsh-users/zsh-syntax-highlighting.git'
                 }
+            },
+            
+            vim_nerdtree: {
+                options: {
+                    directory: '<%= config.vim.path_vim_bundle %>/nerdtree',
+                    repository: 'https://github.com/scrooloose/nerdtree.git'
+                }
+            },
+            
+            vim_nerdtree_tabs: {
+                options: {
+                    directory: '<%= config.vim.path_vim_bundle %>/vim-nerdtree-tabs',
+                    repository: 'https://github.com/jistr/vim-nerdtree-tabs.git'
+                }
+            },
+            
+            vim_syntastic: {
+                options: {
+                    directory: '<%= config.vim.path_vim_bundle %>/syntastic',
+                    repository: 'https://github.com/scrooloose/syntastic.git'
+                }
+            },
+            
+            vim_emmet: {
+                options: {
+                    directory: '<%= config.vim.path_vim_bundle %>/emmet-vim',
+                    repository: 'http://github.com/mattn/emmet-vim.git'
+                }
             }
 
         },
@@ -368,24 +396,8 @@ module.exports = function(grunt) {
                 command: 'curl -Sso <%= config.vim.path_vim %>/autoload/pathogen.vim \ https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim'
             },
 
-            vim_nerdtree: {
-                command: 'git clone https://github.com/scrooloose/nerdtree.git <%= config.vim.path_vim_bundle %>/nerdtree'
-            },
-
-            vim_nerdtree_tabs: {
-                command: 'git clone https://github.com/jistr/vim-nerdtree-tabs.git <%= config.vim.path_vim_bundle %>/vim-nerdtree-tabs'
-            },
-
-            vim_syntastic: {
-                command: 'git clone https://github.com/scrooloose/syntastic.git <%= config.vim.path_vim_bundle %>/syntastic'
-            },
-
             vim_jsbeautify: {
                 command: 'git clone https://github.com/maksimr/vim-jsbeautify.git <%= config.vim.path_vim_bundle %>/vim-jsbeautify && cd <%= config.vim.path_vim_bundle %>/vim-jsbeautify && git submodule update --init --recursive'
-            },
-
-            vim_emmet: {
-                command: 'git clone http://github.com/mattn/emmet-vim.git <%= config.vim.path_vim_bundle %>/emmet-vim'
             },
 
             z_complete: {
