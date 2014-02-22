@@ -335,11 +335,6 @@ module.exports = function(grunt) {
                 relativeSrc: '<%= config.ruby.path_rbenv %>'
             },
 
-            sublime: {
-                dest: '/usr/local/bin/subl',
-                relativeSrc: '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
-            },
-
             zsh: {
                 dest: '<%= config.zsh.path_zshrc_system %>',
                 relativeSrc: '<%= config.zsh.path_zshrc %>'
